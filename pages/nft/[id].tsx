@@ -8,7 +8,7 @@ import Link from 'next/link';
 interface Props{
     collection: Collection
 }
-function NFTDropPage({collection}) {
+function NFTDropPage({collection}:Props) {
     const connectWithMetamask=useMetamask();
     const address=useAddress();
     const disconnect=useDisconnect();
