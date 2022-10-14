@@ -9,7 +9,7 @@ interface Props {
   collections: Collection[];
 }
 
-const Home: NextPage = ({ collections }: Props) => {
+const Home: NextPage<Props> = ({ collections }) => {
   return (
     <div className="max-w-7xl mx-auto flex-col min-h-screen py-20 px-10 2xl:px-0">
       <Head>
