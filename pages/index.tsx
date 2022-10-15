@@ -29,7 +29,7 @@ const Home: NextPage<Props> = ({ collections }) => {
         <div className="grid space-x-3 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
           {collections.map((collection) => (
             <Link href={`/nft/${collection.slug.current}`}>
-              <div key={collection.slug} className="flex flex-col items-center cursor-pointer transition-all duration-200 hover:scale-105">
+              <div  className="flex flex-col items-center cursor-pointer transition-all duration-200 hover:scale-105">
                 <img
                   src={urlFor(collection.mainImage).url()}
                   alt=""
