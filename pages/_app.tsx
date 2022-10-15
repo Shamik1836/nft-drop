@@ -4,7 +4,7 @@ import type { AppProps } from "next/app";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThirdwebProvider desiredChainId={ChainId.FantomTestnet}>
+    <ThirdwebProvider desiredChainId={ChainId.Goerli}>
       <Component {...pageProps} />
     </ThirdwebProvider>
   );
